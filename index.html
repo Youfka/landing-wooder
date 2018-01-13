@@ -2,18 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" name="viewport" content="width=1200px, initial-scale=1">
 	<title>Wooder</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style/normalize.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-	<section>
+	<section class="title-screen">
 	<div class="background-block">
 		<header>
 			<div class="burger-menu">
-				<div class="line"></div>
+				<div class="burger-menu__line"></div>
 				menu
 			</div>
 			<nav class="navigation">
@@ -37,26 +37,28 @@
 				</div>
 			</div>
 		</header>
-		<div class="container">
+		<div class="wrapper-overflow">
 			<div class="title-block">
-				<div class="title-number">
+				<div class="title-block__number">
 					01
-					<div class="dots"></div>
+					<div class="title-block__dots"></div>
 				</div>
-				
-				<div class="title-wrap">
+				<div class="title-block__center">
 					<div class="title">wooder</div>
-					<a href="" class="btn">learn more
-						<img src="images/arrow.svg" alt=""></a>
+					<a href="" class="btn-title">learn more
+						<img src="images/arrow.svg" alt="">
+					</a>
 					<div class="scroll-down">
 						<img src="images/mouse.png" alt="">
-						<div class="vertical-text">
-						<img src="images/arrow.svg" alt="">
-						<span>scroll</span>
+						<div class="scroll-down__vertical">
+							<img src="images/arrow.svg" alt="">
+							<span>scroll</span>
 						</div>
 					</div>
 				</div>
-				<div class="vertical-text">furniture & decor</div>
+				<div class="title-block__vertical-text">
+					furniture <span>&</span> decor
+				</div>
 			</div>
 		</div>
 		<div class="share">
@@ -64,18 +66,47 @@
 		</div>
 		<div class="afterline"></div>
 	</div>
-	<div class="afterline"></div>
 	</section>
-	<div class="afterline"></div>
+	<div class="wrapper-overflow">
 	<div class="container">
-	<div class="furniture">
-		
-	</div>
-	<div class="decor"></div>
-	<div class="quality"></div>
-	</div>
+	<section class="block-white furniture">
+		<div class="content-block">
+			<div class="content-block__lines content-block__lines--left">
+				<div class="content-block__number">01<span>.</span></div>
+			</div>
+			<div class="content-block__content content-block__content--left">
+				<div class="heading">Furniture</div>
+				<p class="text">Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creat- ing new pieces made of reclaimed barnwood</p>
+				<a href="" class="btn">learn more
+					<img src="images/arrow-dark.svg" alt="">
+				</a>
+			</div>
+		</div>
+		<img src="images/furniture.png" class="content-image">
+	</section>
+	<section class="block-white decor">
+		<img src="images/decor.png" class="content-image">
+		<div class="content-block">
+			<div class="content-block__content content-block__content--right">
+				<div class="heading">Decor</div>
+				<p class="text">We make all types of wooden decor as per design given by Architect,Interior designer, contractor which is suitable</p>
+				<a href="" class="btn">learn more
+					<img src="images/arrow-dark.svg" alt="">
+				</a>
+			</div>
+			<div class="content-block__lines content-block__lines--right">
+				<div class="content-block__number">02<span>.</span></div>
+			</div>
+		</div>	
+	</section>
+	<section class="block-white quality">
+		<div class="heading">wooder – is quality</div>
+		<p class="text text--center">We create unique design objects made of rare wood, specially under the order. Look at the short video about our work.</p>
+	</section>
 	<div class="video-block"></div>
 	<div class="about-us"></div>
+	</div>
+</div>
 	<footer>
 		
 	</footer>
