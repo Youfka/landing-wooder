@@ -125,7 +125,8 @@ header {
 }
 
 .container {
-	width: 1200px;
+	width: 1180px;
+	padding: 0 10px;
 	margin: 0 auto;	
 }
 
@@ -229,7 +230,9 @@ header {
 }
 
 .btn-title {
-	display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 	text-decoration: none;
 	width: 300px;
 	height: 50px;
@@ -239,10 +242,11 @@ header {
 	color: #ffffff;
 	letter-spacing: 1px;
 	line-height: 50px;
+	text-transform: uppercase;
 }
 
 .btn-title img {
-    margin-left: 3px;
+    margin: 0 10px;
 }
 
 .btn-title:hover {
@@ -467,7 +471,7 @@ header {
     opacity: 0.2;
 }
 
-.quality {
+.skills {
 	flex-direction: column;	
 }
 
@@ -477,6 +481,7 @@ header {
     line-height: 1.6;
     margin-top: 40px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .text--center:before {
@@ -489,3 +494,224 @@ header {
     width: 45px;
     background-color: #bea67c;
 }
+
+.skills {
+	position: relative;
+}
+
+.skills:before {
+	content: "v";
+    position: absolute;
+    font-size: 396px;
+    font-weight: 600;
+    top: 80%;
+    left: 70%;
+    color: #bea67c;
+    text-transform: uppercase;
+    opacity: 0.1;
+}
+
+.skills-block {
+	display: flex;
+}
+
+.skills-block__skill {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.skills-block__skill-img {
+	border-radius: 50%;
+	padding: 15px;
+	margin: 30px;
+	border: 1px solid #e2e2e2;
+}
+
+.skills-block__skill:before {
+	content: "";
+    display: block;
+    position: absolute;
+    top: 37%;
+    left: 40%;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #bea67c;
+    opacity: 0.8;
+}
+
+.skills-block__skill:after {
+	content: url("../images/play.png");
+    display: block;
+    position: absolute;
+    top: 43%;
+    left: 48%;
+}
+
+.skills-block__skill span {
+	position: relative;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.skills-block__skill span:before {
+	content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 38%;
+    height: 1px;
+    width: 35px;
+    background-color: #bea67c;
+}
+
+.video {
+	width: 100%;
+	height: 916px;
+	background-image: url("../images/video.png");
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.video:before {
+	content: url("../images/play-big.png");
+    position: absolute;
+    top: 5%;
+    left: 35%;
+} 
+
+.video:after {
+	content: "";
+    position: absolute;
+    top: 41%;
+    left: 86%;
+    height: 170px;
+    width: 1px;
+    background-color: #ffffff;
+} 
+
+.video__block {
+    display: flex;
+    align-items: center;
+	width: 90%;
+	height: 90%;
+	border: 1px solid #bea67c;
+	margin: 0 auto;
+	z-index: 2;
+}
+
+.video__block > .content-block {
+	padding-left: 60px;
+}
+
+.heading--light {
+	color: #bea67c;
+}
+
+.text--video {
+	width: 85%;
+	color: #ffffff;
+	padding: 15px 0;
+}
+
+.content-block__lines--video {
+	width: 150px;
+    height: 25px;
+    border-bottom: 1px solid #ffffff;
+    position: relative;
+    margin-right: 30px;
+}
+
+.content-block__lines--video:after {
+	content: "";
+	display: block;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    height: 3px;
+    width: 45px;
+    background-color: #bea67c;
+}
+
+.content-block__content--video {
+	width: 50%;
+}
+
+.about-us {
+	position: relative;
+}
+
+.content-block__lines--about {
+    width: 25%;
+    margin-left: -15%;
+}
+
+.about-us:before {
+	content: "a";
+    position: absolute;
+    font-size: 396px;
+    font-weight: 600;
+    top: -35%;
+    left: 75%;
+    color: #bea67c;
+    text-transform: uppercase;
+    opacity: 0.1;
+}
+
+.about-us:after {
+	content: "about";
+    position: absolute;
+    font-size: 170px;
+    font-weight: 600;
+    top: 35%;
+    left: -15%;
+    color: #d0d0d0;
+    text-transform: uppercase;
+    opacity: 0.2;
+}
+
+footer {
+	background-image: url("../images/footer.png");
+	color: #ffffff;
+	height: 68px;
+}
+
+footer div {
+	height: 68px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.copyright, .designed {
+	opacity: 0.6;
+}
+
+.author {
+	margin-left: 8px;
+}
+
+.logo--footer {
+	position: relative;
+	font-size: 36px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+.logo--footer:after {
+	content: " ";
+	position: absolute;
+	top: 51%;
+    left: 35px;
+    height: 4px;
+    width: 48px;
+    background-color: #bea67c;
+}
+
+.logo--footer a {
+	text-decoration: none;
+	color: inherit;
+}
+
