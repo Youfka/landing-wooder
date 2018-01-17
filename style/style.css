@@ -210,6 +210,16 @@ header {
     top: 50px;
 }
 
+
+@keyframes move {
+    from { left: -10px;}
+    to { left: 10px;}
+}
+.arrow-scroll {
+	position: relative;
+    animation: move 1s infinite ease-in-out;*/
+}
+
 .scroll-down__vertical{
 	position: absolute;
     top: 120px;
