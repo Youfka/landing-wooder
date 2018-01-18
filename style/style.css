@@ -23,7 +23,25 @@ header {
 	position: relative;
 	padding-left: 50px;
 	cursor: pointer;
+	left:0;
 }
+
+.toleft {
+  position: relative;
+  left: -150px;
+  transition: 1s left;
+}
+
+.burger-menu:hover {
+	font-weight: bold;
+}
+
+.burger-menu:hover .burger-menu__line, 
+.burger-menu:hover .burger-menu__line:before,
+.burger-menu:hover .burger-menu__line:after{
+	height: 2px;
+}
+
 .burger-menu__line {
 	position: absolute;
     right: 65%;
@@ -49,6 +67,20 @@ header {
     height: 1px;
     width: 30px;
     background-color: #bea67c;
+}
+
+.burger-menu__block {
+	position: absolute;
+	top:10px;
+	left:-250px;
+	background-color: #000000;
+    height: 150px;
+    width: 150px;
+}
+
+.toright {
+  left: 10px;
+  transition: 1s left;
 }
 
 .navigation {
@@ -81,6 +113,13 @@ header {
 	display: flex;
 }
 
+.menu--left {
+	list-style-type: none;
+	font-size: 15px;
+	padding: 0;
+	display: block;
+}
+
 .menu__link {
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
@@ -88,6 +127,19 @@ header {
 	font-size: 15px;
 	margin-left: 100px;
 }
+
+.menu__link:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+
+.menu__link--left {
+	display: inline-block;
+	margin-top: 10px;
+	margin: 10px 10px 10px 20px;
+	border-bottom: 2px solid transparent;
+}
+
 
 .nav-right {
 	display: flex;
@@ -291,6 +343,7 @@ header {
 	position: absolute;
     top: 96%;
     left: 96%;
+    cursor: pointer;
 }
 
 .background-block:before {
@@ -355,6 +408,10 @@ header {
     height: 2px;
     width: 45px;
     background-color: #bea67c;
+}
+
+.btn:hover {
+    text-shadow: -8px -8px 2px #00000030;
 }
 
 .btn img {
@@ -532,32 +589,48 @@ header {
 	position: relative;
 }
 
+.skills-block__skill-img-wrap {
+	display: inline-block;
+    margin: 30px;
+}
+
 .skills-block__skill-img {
 	border-radius: 50%;
 	padding: 15px;
-	margin: 30px;
 	border: 1px solid #e2e2e2;
+	cursor: pointer;
 }
 
-.skills-block__skill:before {
+.skills-block__skill-img-wrap:before {
 	content: "";
     display: block;
     position: absolute;
-    top: 37%;
+    top: 36%;
     left: 40%;
     height: 70px;
     width: 70px;
     border-radius: 50%;
     background-color: #bea67c;
     opacity: 0.8;
+    cursor: pointer;
 }
 
-.skills-block__skill:after {
+.skills-block__skill-img-wrap:hover .skills-block__skill-img {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.skills-block__skill-img-wrap:hover:before {
+	opacity: 1;
+}
+
+
+.skills-block__skill-img-wrap:after {
 	content: url("../images/play.png");
     display: block;
     position: absolute;
-    top: 43%;
+    top: 42%;
     left: 48%;
+    cursor: pointer;
 }
 
 .skills-block__skill span {

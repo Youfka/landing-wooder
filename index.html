@@ -7,14 +7,22 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style/normalize.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type = "text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<section class="title-screen">
 	<div class="background-block">
 		<header>
-			<div class="burger-menu">
+			<div class="burger-menu" onclick="showMenu()">
 				<div class="burger-menu__line"></div>
 				menu
+			</div>
+			<div class="burger-menu__block">
+				<ul class="menu--left">
+					<li><a href="" class="menu__link menu__link--left">home</a></li>
+					<li><a href="" class="menu__link menu__link--left">product</a></li>
+					<li><a href="" class="menu__link menu__link--left">about</a></li>
+				</ul>
 			</div>
 			<nav class="navigation">
 				<div class="logo">
@@ -104,15 +112,21 @@
 		<p class="text text--center">We create unique design objects made of rare wood, specially under the order. Look at the short video about our work.</p>
 		<div class="skills-block">
 			<div class="skills-block__skill">
-				<img src="images/design.png" class="skills-block__skill-img">
+				<div class="skills-block__skill-img-wrap">
+					<img src="images/design.png" class="skills-block__skill-img">
+				</div>
 				<span>Innovative Design</span>
 			</div>
 			<div class="skills-block__skill">
-				<img src="images/skills.png" class="skills-block__skill-img">
+				<div class="skills-block__skill-img-wrap">
+					<img src="images/skills.png" class="skills-block__skill-img">
+				</div>
 				<span>High-level Skills</span>
 			</div>
 			<div class="skills-block__skill">
-				<img src="images/product.png" class="skills-block__skill-img">
+				<div class="skills-block__skill-img-wrap">
+					<img src="images/product.png" class="skills-block__skill-img">
+				</div>
 				<span>Quality Products</span>
 			</div>
 		</div>
