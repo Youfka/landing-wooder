@@ -28,7 +28,12 @@ header {
 
 .toleft {
   position: relative;
-  left: -150px;
+  left: -250px;
+  transition: 1s left;
+}
+
+.toright {
+  left: 10px;
   transition: 1s left;
 }
 
@@ -72,16 +77,12 @@ header {
 .burger-menu__block {
 	position: absolute;
 	top:10px;
-	left:-250px;
 	background-color: #000000;
     height: 150px;
     width: 150px;
 }
 
-.toright {
-  left: 10px;
-  transition: 1s left;
-}
+
 
 .navigation {
 	display: flex;
